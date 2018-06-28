@@ -1,0 +1,10 @@
+ spring:
+  profiles:
+     active: production
+ feign:
+  url: https://microlending.herokuapp.com
+  client:
+    config:
+      feignName:
+        encoder: feign.jackson.JacksonEncoder
+        decoder: feign.jackson.JacksonDecoder
