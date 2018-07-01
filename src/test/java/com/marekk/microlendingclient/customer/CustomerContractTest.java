@@ -9,6 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.cloud.contract.stubrunner.spring.AutoConfigureStubRunner;
 import org.springframework.cloud.contract.stubrunner.spring.StubRunnerProperties;
 import org.springframework.context.annotation.Profile;
+import org.springframework.test.annotation.IfProfileValue;
 import org.springframework.test.context.junit4.SpringRunner;
 import com.marekk.microlendingclient.MicrolendingClientApplication;
 
@@ -19,14 +20,13 @@ import static org.springframework.test.web.servlet.request.MockMvcRequestBuilder
 @SpringBootTest(classes = MicrolendingClientApplication.class)
 @AutoConfigureStubRunner(stubsMode = StubRunnerProperties.StubsMode.LOCAL,
         ids = { "com.marekk:microlending:+8081" })
-@Profile("test")
+@IfProfileValue(name = "spring.profiles.active", value = "test")
 public class CustomerContractTest {
 
     @Autowired
     private CustomerClient customerClient;
     @Test
     public void shouldFindClient() {
-        //Given
         //When
         CustomerSnapshot found = customerClient.retrieve("1");
         //Then
