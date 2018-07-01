@@ -1,4 +1,4 @@
-package pl.marekk.microlendingclient.customer;
+package com.marekk.microlendingclient.customer;
 
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
@@ -6,7 +6,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 import lombok.experimental.FieldDefaults;
-import pl.marekk.microlendingclient.Snapshot;
+import com.marekk.microlendingclient.Snapshot;
 
 import static lombok.AccessLevel.MODULE;
 import static lombok.AccessLevel.PRIVATE;

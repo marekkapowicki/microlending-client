@@ -1,4 +1,4 @@
-package pl.marekk.microlendingclient;
+package com.marekk.microlendingclient;
 
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;

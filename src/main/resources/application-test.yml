@@ -1,8 +1,6 @@
- spring:
-  profiles:
-     active: production
+
  feign:
-  url: http://www.tix.com
+  url: http://localhost:8081
   client:
     config:
       feignName:

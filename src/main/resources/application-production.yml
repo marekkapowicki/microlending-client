@@ -1,8 +1,6 @@
- spring:
-  profiles:
-     active: production
+
  feign:
-  url: https://microlending.herokuapp.com
+  url: http://localhost:8080
   client:
     config:
       feignName:

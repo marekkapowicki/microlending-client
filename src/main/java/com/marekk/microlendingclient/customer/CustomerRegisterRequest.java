@@ -1,11 +1,10 @@
-package pl.marekk.microlendingclient.customer;
+package com.marekk.microlendingclient.customer;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
 import lombok.Getter;
 import lombok.ToString;
 import lombok.experimental.FieldDefaults;
-import pl.marekk.microlendingclient.CreateResourceRequest;
+import com.marekk.microlendingclient.CreateResourceRequest;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;

@@ -1,8 +1,3 @@
-
- feign:
-  url: http://localhost:8080
-  client:
-    config:
-      feignName:
-        encoder: feign.jackson.JacksonEncoder
-        decoder: feign.jackson.JacksonDecoder
+ spring:
+  profiles:
+     active: test

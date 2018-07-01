@@ -1,4 +1,4 @@
-package pl.marekk.microlendingclient;
+package com.marekk.microlendingclient;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

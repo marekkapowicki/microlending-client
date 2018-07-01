@@ -1,4 +1,4 @@
-package pl.marekk.microlendingclient;
+package com.marekk.microlendingclient;
 
 /**
  * immutable representation of entity

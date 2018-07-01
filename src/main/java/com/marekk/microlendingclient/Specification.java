@@ -1,4 +1,4 @@
-package pl.marekk.microlendingclient;
+package com.marekk.microlendingclient;
 
 public interface Specification {
     String ROOT = "/api";
